@@ -248,7 +248,7 @@ php artisan serve
 http://localhost:8000/larapack
 
 画面に<br><br>
-`Hello from Mylarapack!`
+`Hello from Mylarapack! 見えてる？`
 <br><br>
 と表示されたら成功です
 
