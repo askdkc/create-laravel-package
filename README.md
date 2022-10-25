@@ -22,7 +22,8 @@ laravel new larapack
 cd larapack
 ```
 
-ここで新規laravelプロジェクト配下に packages/パッケージ名 となるようにcloneします
+ここで新規laravelプロジェクト配下に packages/パッケージ名 となるようにcloneします<br>
+(clone元のGitHubリポジトリも↑で複製したスケルトンリポジトリに合わせて変更してください)
 
 ```zsh
 git clone git@github.com:askdkc/package-skeleton-laravel.git packages/mylarapack
