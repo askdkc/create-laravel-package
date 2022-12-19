@@ -16,7 +16,7 @@ laravel new larapack
 パッケージ作成用のスケルトンリポジトリは[こちら](https://github.com/askdkc/package-skeleton-laravel)
 > **ちなみに：**
 > 
-> スケルトンリポジトリの使い方に従ってリポジトリテンプレートを自分のGitHubリポジトリに複製した場合には、基本的にそちらを使ってください
+> スケルトンリポジトリの使い方に従ってリポジトリテンプレートを自分のGitHubリポジトリに複製したものを使ってください
 
 ```zsh
 cd larapack
@@ -26,7 +26,7 @@ cd larapack
 (clone元のGitHubリポジトリも↑で複製したスケルトンリポジトリに合わせて変更してください)
 
 ```zsh
-git clone git@github.com:askdkc/package-skeleton-laravel.git packages/mylarapack
+git clone git@github.com:あなたのGitHubユーザ名/package-skeleton-laravel.git packages/mylarapack
 ```
 
 ## スケルトンの自動生成機能を使い、パッケージをセットアップ
