@@ -260,7 +260,7 @@ composer.json 末尾付近
 ↓
 ---after---
     "minimum-stability": "dev",
-    "prefer-stable": true,
+    "prefer-stable": false,
     "repositories": {
         "local": {
             "type": "path",
