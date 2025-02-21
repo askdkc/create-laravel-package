@@ -239,6 +239,46 @@ composer.json 末尾付近
 composer require askdkc/mylarapack  ← パッケージ名を変えてる場合は、ここも適宜変えてね
 ```
 
+> **注意：**
+既にパッケージを https://packagist.org に公開済みの場合は`composer`コマンドがそちらを優先しようとしてしまうので、その際は`composer.json`を下記のように修正してください
+```vim
+composer.json 末尾付近
+---before---
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "repositories": {
+        "local": {
+            "type": "path",
+            "url": "./packages/*",
+            "options": {
+                "symlink": true
+            }
+        }
+    }
+}
+------------
+↓
+---after---
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "repositories": {
+        "local": {
+            "type": "path",
+            "url": "./packages/*",
+            "options": {
+                "symlink": true
+            },
+            "canonical": false
+        }
+    }
+}
+-----------
+```
+そしてインストールコマンドを次のようにします
+```zsh
+composer require askdkc/mylarapack --prefer-source
+```
+
 ## 動作確認
 Laravelを起動して動作確認します
 ```zsh
